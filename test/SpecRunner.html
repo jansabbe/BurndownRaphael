@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Jasmine Test Runner</title>
+  <link rel="stylesheet" href="lib/jasmine-1.0.2/jasmine.css">
+  <script src="lib/jasmine-1.0.2/jasmine.js"></script>
+  <script src="lib/jasmine-1.0.2/jasmine-html.js"></script>
+
+  <!-- Dependencies op app -->
+  <script src='../lib/raphael-min.js'></script>
+  <script src='../lib/drawit.js'></script>
+
+  <!-- Dependencies op specs -->
+  <script src='spec/spec_drawit.js'></script>
+</head>
+<body>
+
+<script>
+  jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+  jasmine.getEnv().execute();
+</script>
+
+</body>
+</html>

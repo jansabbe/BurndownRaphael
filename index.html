@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript APP</title>
+</head>
+<body>
+  <div id='drawingsurface'></div>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js'></script>
+  <script src='http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js'></script>
+  <script src='lib/raphael-min.js'></script>
+  <script src='lib/drawit.js'></script>
+  <script>
+    $(function() {
+    var paper = new Raphael('drawingsurface',800,400);
+    BURNDOWN.create({
+    aantalDagen: 10, width:800,
+    maxEtc: 40, height:400,
+    totaleEtcs: [40,40,38,30,35,20,15,15,8,0]}).drawon(paper);
+    });
+
+  </script>
+</body>
+</html>
