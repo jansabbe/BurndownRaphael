@@ -11,11 +11,14 @@
   <script src='lib/drawit.js'></script>
   <script>
     $(function() {
-    var paper = new Raphael('drawingsurface',800,400);
-    BURNDOWN.create({
-    aantalDagen: 10, width:800,
-    maxEtc: 40, height:400,
-    totaleEtcs: [40,40,38,30,35,20,15,15,8,0]}).drawon(paper);
+      var paper = new Raphael('drawingsurface',800,400);
+      BURNDOWN.create({
+        aantalDagen: 10, 
+        width: 800,
+        maxEtc: 40, 
+        height: 400,
+        totaleEtcs: [40,40,38,30,35,20,15,15,8,0]
+      }).drawon(paper);
     });
 
   </script>
