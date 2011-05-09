@@ -62,6 +62,7 @@ describe("BURNDOWN module kan een simpele burndown grafiek tekenen", function ()
         + " L " + dag2xy.x + " " + dag2xy.y
         + " L " + dag3xy.x + " " + dag3xy.y;
       var paperMock = jasmine.createSpyObj('paper', ['path']);
+      paperMock.path.andReturn(jasmine.createSpyObj('path',['attr']));
       burndown.drawon(paperMock);
 
       expect(paperMock.path).toHaveBeenCalledWith(expectedPathString);
